@@ -154,6 +154,7 @@
 				E47720781CE62CC300FB3A08 /* Sources */,
 				E47720791CE62CC300FB3A08 /* Frameworks */,
 				E477207A1CE62CC300FB3A08 /* Resources */,
+				E47720BF1CE63B3800FB3A08 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -268,6 +269,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E47720BF1CE63B3800FB3A08 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/AFNetworking.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E47720781CE62CC300FB3A08 /* Sources */ = {
