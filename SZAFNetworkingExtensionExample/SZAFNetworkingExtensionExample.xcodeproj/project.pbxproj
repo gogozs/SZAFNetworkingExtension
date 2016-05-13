@@ -1,0 +1,523 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E47720811CE62CC300FB3A08 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E47720801CE62CC300FB3A08 /* main.m */; };
+		E47720841CE62CC300FB3A08 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E47720831CE62CC300FB3A08 /* AppDelegate.m */; };
+		E47720871CE62CC300FB3A08 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E47720861CE62CC300FB3A08 /* ViewController.m */; };
+		E477208A1CE62CC300FB3A08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E47720881CE62CC300FB3A08 /* Main.storyboard */; };
+		E477208C1CE62CC300FB3A08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E477208B1CE62CC300FB3A08 /* Assets.xcassets */; };
+		E477208F1CE62CC300FB3A08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E477208D1CE62CC300FB3A08 /* LaunchScreen.storyboard */; };
+		E477209A1CE62CC300FB3A08 /* SZAFNetworkingExtensionExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E47720991CE62CC300FB3A08 /* SZAFNetworkingExtensionExampleTests.m */; };
+		E47720A51CE62CC300FB3A08 /* SZAFNetworkingExtensionExampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E47720A41CE62CC300FB3A08 /* SZAFNetworkingExtensionExampleUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E47720961CE62CC300FB3A08 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E47720741CE62CC300FB3A08 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E477207B1CE62CC300FB3A08;
+			remoteInfo = SZAFNetworkingExtensionExample;
+		};
+		E47720A11CE62CC300FB3A08 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E47720741CE62CC300FB3A08 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E477207B1CE62CC300FB3A08;
+			remoteInfo = SZAFNetworkingExtensionExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E477207C1CE62CC300FB3A08 /* SZAFNetworkingExtensionExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SZAFNetworkingExtensionExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E47720801CE62CC300FB3A08 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E47720821CE62CC300FB3A08 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E47720831CE62CC300FB3A08 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E47720851CE62CC300FB3A08 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E47720861CE62CC300FB3A08 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E47720891CE62CC300FB3A08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E477208B1CE62CC300FB3A08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E477208E1CE62CC300FB3A08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E47720901CE62CC300FB3A08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E47720951CE62CC300FB3A08 /* SZAFNetworkingExtensionExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SZAFNetworkingExtensionExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E47720991CE62CC300FB3A08 /* SZAFNetworkingExtensionExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SZAFNetworkingExtensionExampleTests.m; sourceTree = "<group>"; };
+		E477209B1CE62CC300FB3A08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E47720A01CE62CC300FB3A08 /* SZAFNetworkingExtensionExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SZAFNetworkingExtensionExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E47720A41CE62CC300FB3A08 /* SZAFNetworkingExtensionExampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SZAFNetworkingExtensionExampleUITests.m; sourceTree = "<group>"; };
+		E47720A61CE62CC300FB3A08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E47720791CE62CC300FB3A08 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E47720921CE62CC300FB3A08 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E477209D1CE62CC300FB3A08 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E47720731CE62CC300FB3A08 = {
+			isa = PBXGroup;
+			children = (
+				E477207E1CE62CC300FB3A08 /* SZAFNetworkingExtensionExample */,
+				E47720981CE62CC300FB3A08 /* SZAFNetworkingExtensionExampleTests */,
+				E47720A31CE62CC300FB3A08 /* SZAFNetworkingExtensionExampleUITests */,
+				E477207D1CE62CC300FB3A08 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E477207D1CE62CC300FB3A08 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E477207C1CE62CC300FB3A08 /* SZAFNetworkingExtensionExample.app */,
+				E47720951CE62CC300FB3A08 /* SZAFNetworkingExtensionExampleTests.xctest */,
+				E47720A01CE62CC300FB3A08 /* SZAFNetworkingExtensionExampleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E477207E1CE62CC300FB3A08 /* SZAFNetworkingExtensionExample */ = {
+			isa = PBXGroup;
+			children = (
+				E47720821CE62CC300FB3A08 /* AppDelegate.h */,
+				E47720831CE62CC300FB3A08 /* AppDelegate.m */,
+				E47720851CE62CC300FB3A08 /* ViewController.h */,
+				E47720861CE62CC300FB3A08 /* ViewController.m */,
+				E47720881CE62CC300FB3A08 /* Main.storyboard */,
+				E477208B1CE62CC300FB3A08 /* Assets.xcassets */,
+				E477208D1CE62CC300FB3A08 /* LaunchScreen.storyboard */,
+				E47720901CE62CC300FB3A08 /* Info.plist */,
+				E477207F1CE62CC300FB3A08 /* Supporting Files */,
+			);
+			path = SZAFNetworkingExtensionExample;
+			sourceTree = "<group>";
+		};
+		E477207F1CE62CC300FB3A08 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E47720801CE62CC300FB3A08 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E47720981CE62CC300FB3A08 /* SZAFNetworkingExtensionExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				E47720991CE62CC300FB3A08 /* SZAFNetworkingExtensionExampleTests.m */,
+				E477209B1CE62CC300FB3A08 /* Info.plist */,
+			);
+			path = SZAFNetworkingExtensionExampleTests;
+			sourceTree = "<group>";
+		};
+		E47720A31CE62CC300FB3A08 /* SZAFNetworkingExtensionExampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E47720A41CE62CC300FB3A08 /* SZAFNetworkingExtensionExampleUITests.m */,
+				E47720A61CE62CC300FB3A08 /* Info.plist */,
+			);
+			path = SZAFNetworkingExtensionExampleUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E477207B1CE62CC300FB3A08 /* SZAFNetworkingExtensionExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E47720A91CE62CC300FB3A08 /* Build configuration list for PBXNativeTarget "SZAFNetworkingExtensionExample" */;
+			buildPhases = (
+				E47720781CE62CC300FB3A08 /* Sources */,
+				E47720791CE62CC300FB3A08 /* Frameworks */,
+				E477207A1CE62CC300FB3A08 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SZAFNetworkingExtensionExample;
+			productName = SZAFNetworkingExtensionExample;
+			productReference = E477207C1CE62CC300FB3A08 /* SZAFNetworkingExtensionExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E47720941CE62CC300FB3A08 /* SZAFNetworkingExtensionExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E47720AC1CE62CC300FB3A08 /* Build configuration list for PBXNativeTarget "SZAFNetworkingExtensionExampleTests" */;
+			buildPhases = (
+				E47720911CE62CC300FB3A08 /* Sources */,
+				E47720921CE62CC300FB3A08 /* Frameworks */,
+				E47720931CE62CC300FB3A08 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E47720971CE62CC300FB3A08 /* PBXTargetDependency */,
+			);
+			name = SZAFNetworkingExtensionExampleTests;
+			productName = SZAFNetworkingExtensionExampleTests;
+			productReference = E47720951CE62CC300FB3A08 /* SZAFNetworkingExtensionExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E477209F1CE62CC300FB3A08 /* SZAFNetworkingExtensionExampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E47720AF1CE62CC300FB3A08 /* Build configuration list for PBXNativeTarget "SZAFNetworkingExtensionExampleUITests" */;
+			buildPhases = (
+				E477209C1CE62CC300FB3A08 /* Sources */,
+				E477209D1CE62CC300FB3A08 /* Frameworks */,
+				E477209E1CE62CC300FB3A08 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E47720A21CE62CC300FB3A08 /* PBXTargetDependency */,
+			);
+			name = SZAFNetworkingExtensionExampleUITests;
+			productName = SZAFNetworkingExtensionExampleUITests;
+			productReference = E47720A01CE62CC300FB3A08 /* SZAFNetworkingExtensionExampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E47720741CE62CC300FB3A08 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Song Zhou";
+				TargetAttributes = {
+					E477207B1CE62CC300FB3A08 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					E47720941CE62CC300FB3A08 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = E477207B1CE62CC300FB3A08;
+					};
+					E477209F1CE62CC300FB3A08 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = E477207B1CE62CC300FB3A08;
+					};
+				};
+			};
+			buildConfigurationList = E47720771CE62CC300FB3A08 /* Build configuration list for PBXProject "SZAFNetworkingExtensionExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E47720731CE62CC300FB3A08;
+			productRefGroup = E477207D1CE62CC300FB3A08 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E477207B1CE62CC300FB3A08 /* SZAFNetworkingExtensionExample */,
+				E47720941CE62CC300FB3A08 /* SZAFNetworkingExtensionExampleTests */,
+				E477209F1CE62CC300FB3A08 /* SZAFNetworkingExtensionExampleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E477207A1CE62CC300FB3A08 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E477208F1CE62CC300FB3A08 /* LaunchScreen.storyboard in Resources */,
+				E477208C1CE62CC300FB3A08 /* Assets.xcassets in Resources */,
+				E477208A1CE62CC300FB3A08 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E47720931CE62CC300FB3A08 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E477209E1CE62CC300FB3A08 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E47720781CE62CC300FB3A08 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E47720871CE62CC300FB3A08 /* ViewController.m in Sources */,
+				E47720841CE62CC300FB3A08 /* AppDelegate.m in Sources */,
+				E47720811CE62CC300FB3A08 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E47720911CE62CC300FB3A08 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E477209A1CE62CC300FB3A08 /* SZAFNetworkingExtensionExampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E477209C1CE62CC300FB3A08 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E47720A51CE62CC300FB3A08 /* SZAFNetworkingExtensionExampleUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E47720971CE62CC300FB3A08 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E477207B1CE62CC300FB3A08 /* SZAFNetworkingExtensionExample */;
+			targetProxy = E47720961CE62CC300FB3A08 /* PBXContainerItemProxy */;
+		};
+		E47720A21CE62CC300FB3A08 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E477207B1CE62CC300FB3A08 /* SZAFNetworkingExtensionExample */;
+			targetProxy = E47720A11CE62CC300FB3A08 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E47720881CE62CC300FB3A08 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E47720891CE62CC300FB3A08 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E477208D1CE62CC300FB3A08 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E477208E1CE62CC300FB3A08 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E47720A71CE62CC300FB3A08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E47720A81CE62CC300FB3A08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E47720AA1CE62CC300FB3A08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = "";
+				INFOPLIST_FILE = SZAFNetworkingExtensionExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.songzhou.SZAFNetworkingExtensionExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E47720AB1CE62CC300FB3A08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = "";
+				INFOPLIST_FILE = SZAFNetworkingExtensionExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.songzhou.SZAFNetworkingExtensionExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E47720AD1CE62CC300FB3A08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SZAFNetworkingExtensionExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.songzhou.SZAFNetworkingExtensionExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SZAFNetworkingExtensionExample.app/SZAFNetworkingExtensionExample";
+			};
+			name = Debug;
+		};
+		E47720AE1CE62CC300FB3A08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SZAFNetworkingExtensionExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.songzhou.SZAFNetworkingExtensionExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SZAFNetworkingExtensionExample.app/SZAFNetworkingExtensionExample";
+			};
+			name = Release;
+		};
+		E47720B01CE62CC300FB3A08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SZAFNetworkingExtensionExampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.songzhou.SZAFNetworkingExtensionExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SZAFNetworkingExtensionExample;
+			};
+			name = Debug;
+		};
+		E47720B11CE62CC300FB3A08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SZAFNetworkingExtensionExampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.songzhou.SZAFNetworkingExtensionExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SZAFNetworkingExtensionExample;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E47720771CE62CC300FB3A08 /* Build configuration list for PBXProject "SZAFNetworkingExtensionExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E47720A71CE62CC300FB3A08 /* Debug */,
+				E47720A81CE62CC300FB3A08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E47720A91CE62CC300FB3A08 /* Build configuration list for PBXNativeTarget "SZAFNetworkingExtensionExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E47720AA1CE62CC300FB3A08 /* Debug */,
+				E47720AB1CE62CC300FB3A08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E47720AC1CE62CC300FB3A08 /* Build configuration list for PBXNativeTarget "SZAFNetworkingExtensionExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E47720AD1CE62CC300FB3A08 /* Debug */,
+				E47720AE1CE62CC300FB3A08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E47720AF1CE62CC300FB3A08 /* Build configuration list for PBXNativeTarget "SZAFNetworkingExtensionExampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E47720B01CE62CC300FB3A08 /* Debug */,
+				E47720B11CE62CC300FB3A08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E47720741CE62CC300FB3A08 /* Project object */;
+}
