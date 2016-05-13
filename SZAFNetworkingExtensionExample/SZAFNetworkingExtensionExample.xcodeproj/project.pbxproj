@@ -15,6 +15,7 @@
 		E477208F1CE62CC300FB3A08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E477208D1CE62CC300FB3A08 /* LaunchScreen.storyboard */; };
 		E477209A1CE62CC300FB3A08 /* SZAFNetworkingExtensionExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E47720991CE62CC300FB3A08 /* SZAFNetworkingExtensionExampleTests.m */; };
 		E47720A51CE62CC300FB3A08 /* SZAFNetworkingExtensionExampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E47720A41CE62CC300FB3A08 /* SZAFNetworkingExtensionExampleUITests.m */; };
+		E47720BE1CE638A700FB3A08 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E47720BD1CE638A700FB3A08 /* AFNetworking.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		E47720A01CE62CC300FB3A08 /* SZAFNetworkingExtensionExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SZAFNetworkingExtensionExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E47720A41CE62CC300FB3A08 /* SZAFNetworkingExtensionExampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SZAFNetworkingExtensionExampleUITests.m; sourceTree = "<group>"; };
 		E47720A61CE62CC300FB3A08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E47720BD1CE638A700FB3A08 /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = Carthage/Build/iOS/AFNetworking.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E47720BE1CE638A700FB3A08 /* AFNetworking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +84,7 @@
 		E47720731CE62CC300FB3A08 = {
 			isa = PBXGroup;
 			children = (
+				E47720BD1CE638A700FB3A08 /* AFNetworking.framework */,
 				E477207E1CE62CC300FB3A08 /* SZAFNetworkingExtensionExample */,
 				E47720981CE62CC300FB3A08 /* SZAFNetworkingExtensionExampleTests */,
 				E47720A31CE62CC300FB3A08 /* SZAFNetworkingExtensionExampleUITests */,
@@ -415,7 +419,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				FRAMEWORK_SEARCH_PATHS = "";
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/iOS";
 				INFOPLIST_FILE = SZAFNetworkingExtensionExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.songzhou.SZAFNetworkingExtensionExample;
@@ -427,7 +431,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				FRAMEWORK_SEARCH_PATHS = "";
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/iOS";
 				INFOPLIST_FILE = SZAFNetworkingExtensionExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.songzhou.SZAFNetworkingExtensionExample;
