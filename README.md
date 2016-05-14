@@ -6,9 +6,9 @@ failure control flow' features.
 ## problem I met
 
 ### 'failure' response from Server
-response status code is 200, which means request successfull. But response from
-server tells me something is wrong(by including 'error' entry in JSON). So I
-need mark above case as 'failure'.
+response status code is `200`, which means request successful. But response from
+server tells me something is wrong(by including `error` entry in JSON). So I
+need mark above case as `failure`.
 
 ### retry
 programming with Network is not reliable, retry is neccessary.
@@ -16,7 +16,7 @@ programming with Network is not reliable, retry is neccessary.
 ## Features
 
 ### unify failure control flow
-all failure request from Server, including 'error' entry in JSON will let code
+all failure request from Server, including `error` entry in JSON will let code
 jump into `failure block`.
 
 ### retry
@@ -30,7 +30,7 @@ provide retry machanism.
 ### unify failure control flow
 call
 
-``` objc
+``` 
 - (nullable NSURLSessionDataTask *)SZGET:(NSString *)URLString 
                               parameters:(nullable id)parameters 
                                 progress:(nullable SZNetworkDownlaodProgress)downloadProgress 
@@ -40,7 +40,7 @@ call
 
 and `override` 
 
-```objc
+```
 - (void)handleResponse:(id _Nullable)responseObject 
                   task:(NSURLSessionDataTask * _Nonnull)task 
                success:(nullable SZNetworkSuccess)success 
@@ -52,7 +52,7 @@ to implement custom error handling logic
 
 call
 
-```objc
+```
 - (nullable NSURLSessionDataTask *)SZGET:(NSString *)URLString
                               parameters:(nullable id)parameters
                                 progress:(nullable SZNetworkDownlaodProgress)downloadProgress
