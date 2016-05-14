@@ -24,12 +24,19 @@
     // check custom defined error entry
     if ([responseObject isKindOfClass:[NSDictionary class]]) {
         NSDictionary *response = responseObject;
-        if ([response objectForKey:@"error"]) { // or other custom error response entry
+        
+        NSNumber *errorCode = [response objectForKey:@"error"];
+        if (errorCode) {
+            NSError *error;
+            if (errorCode.integerValue <= 5) { // not serious error, can retry
+                error = [NSError errorWithDomain:@"example domain" code:errorCode.integerValue userInfo:@{@"info": @"needs retry"}];
+            } else { // serious error
+                error = [NSError errorWithDomain:@"example domain" code:errorCode.integerValue userInfo:@{@"info": @"response contains error"}];
+            }
             
-            NSError *error = [NSError errorWithDomain:@"example domain" code:0 userInfo:@{@"info": @"response contains error"}];
             failure(task, error);
-            
             return;
+            
         }
     }
     
@@ -37,4 +44,11 @@
     success(task, responseObject);
 }
 
+- (BOOL)needsRetryWithTask:(NSURLSessionDataTask *)task error:(NSError *)error {
+    if (error.code <= 5) {
+        return YES;
+    }
+    
+    return NO;
+}
 @end

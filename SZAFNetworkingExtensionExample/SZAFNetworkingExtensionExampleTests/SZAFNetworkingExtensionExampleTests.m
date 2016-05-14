@@ -16,18 +16,37 @@ static NSString *STATUS_URL = @"http://httpstat.us";
 
 @property (nonatomic) NSString *responseErrorMethod;
 @property (nonatomic) NSString *successMethod;
+@property (nonatomic) NSString *retryMethod;
+
 @property (nonatomic) SZHTTPSessionManager *httpClient;
 @property (nonatomic) SZHTTPSessionManager *testStatusClient;
 
 @end
 
+/**
+ * assume `errorCode` in [1...10]
+ * if errorCode <= 5, needs retry, otherwise, it's a serious error, don't need to retry
+ */
 @implementation SZAFNetworkingExtensionExampleTests
 
 - (void)setUp {
     [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
-    _responseErrorMethod = @"error/1";
+    
+    /* response
+     *
+     * {"error": "6"}
+     */
+    _responseErrorMethod = @"error/6";
+    
     _successMethod = @"success/1";
+    
+    /* response
+     *
+     * {
+     *  "error": "1",
+     * }
+     */
+    _retryMethod = @"error/1";
     
     _httpClient = [[SZHTTPSessionManager alloc] initWithBaseURL:[NSURL URLWithString:API_URL]];
     _testStatusClient = [[SZHTTPSessionManager alloc] initWithBaseURL:[NSURL URLWithString:STATUS_URL]];
@@ -50,6 +69,23 @@ static NSString *STATUS_URL = @"http://httpstat.us";
 
 - (void)test404 {
     [self caseWithStatusMethod:@"404" needsSuccess:NO];
+}
+
+- (void)testRetry {
+    XCTestExpectation *e = [self expectationWithDescription:@"test retry"];
+    
+    [_httpClient SZGET:_retryMethod
+            parameters:nil
+              progress:nil
+               success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+                 NSLog(@"success: %@", responseObject);
+               } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+                 NSLog(@"fail: %@", error);
+                   [e fulfill];
+               } retryCount:3];
+    
+    
+    [self waitForExpectationsWithTimeout:9.0 handler:nil];
 }
 
 #pragma mark -
